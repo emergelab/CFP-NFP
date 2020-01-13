@@ -77,7 +77,7 @@ end
     
     
 
-%% Run NRS-PM
+%% Run Connectome Fingerprint (CFP) predictive models
 k = 10;
 spearman = 0;
 thresh = 0.05;
@@ -190,7 +190,7 @@ end
 
     fprintf('\n Compile niNRS is Done\n');
       
-%% Run NPM on niNRS
+%% Run nodal fingerprint (NFP) on niNRS (note that AA424 (level 137) provides the nS (i.e., GBC))
 k = 10;
 spearman = 0;
 thresh = 0.05;
@@ -202,7 +202,7 @@ s = 1; d = 1;
 
 ninrsR = table; ninrsPosNodes = table; ninrsNegNodes = table; ninrsCoef = table;
 i = 0;
-for ii = [5 137]
+for ii = [5 137] % any or all levels(1:end)
     i = i+1;
     Ci = C(:,ii);
     m = max(Ci);
@@ -241,7 +241,7 @@ end
 
     fprintf('\n Compile neNRS is Done\n');
     
-%% Run NPM on neNRS
+%% Run nodal fingerprint (NFP) on neNRS
 k = 10;
 spearman = 0;
 thresh = 0.05;
@@ -253,7 +253,7 @@ s = 1; d = 0;
 
 nenrsR = table; nenrsPosNodes = table; nenrsNegNodes = table; nenrsCoef = table;
 i = 0;
-for ii = 5
+for ii = 5 % any or all levels(1:end-1)
     i = i+1;
     Ci = C(:,ii);
     m = max(Ci);
