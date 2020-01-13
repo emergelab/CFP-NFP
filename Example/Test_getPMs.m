@@ -2,7 +2,8 @@
 addpath('../getPMs','../getPMs/CircularGraph')
 load('atlasindex.mat')
 workingatlas = 'A424'; 
-aac = 'AA'; modularity = [aac 'C'];
+aac = 'AA'; % AA for Akiki-Abdallah whole-brain atlas; AAc for Akiki-Abdallah cortical atlas.
+modularity = [aac 'C'];
 C = atlasindex.(workingatlas).(modularity); 
 [nn,~] = size(C);
 
