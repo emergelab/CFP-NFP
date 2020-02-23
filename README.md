@@ -3,7 +3,7 @@ Connectome Fingerprint scripts based on the following paper:
 
 **A Unique Brain Connectome Fingerprint Predates and Predicts Response to Antidepressants**  
 Nemati S, Akiki TJ, Roscoe J, Ju Y, Averill CL, Fouda S, Dutta A, McKie S, Krystal JH, Deakin JFW, Averill LA, Abdallah CG.  
-iScience. 2019;23:100800. doi: [10.1016/j.isci.2019.100800](https://doi.org/10.1016/j.isci.2019.100800)
+iScience. 2020;3(1):100800. doi: [10.1016/j.isci.2019.100800](https://doi.org/10.1016/j.isci.2019.100800)
 
 ## Usage
 
@@ -13,4 +13,4 @@ To get the Akiki-Abdallah (AA) atlas and plot nodal results on the brain, use ma
 
 ## Included Fingerprints
 
-FPs/AD_CFPs.mat (antidepressant CFP) and FPs/AD_NFP (nodal fingerprint) from Nemati, Akiki, et al., iScience. doi: [10.1016/j.isci.2019.100800](https://doi.org/10.1016/j.isci.2019.100800)
+FPs/AD_CFPs.mat (antidepressant CFP) and FPs/AD_NFP (nodal fingerprint) from Nemati, Akiki, et al. 2020, iScience . doi: [10.1016/j.isci.2019.100800](https://doi.org/10.1016/j.isci.2019.100800)
