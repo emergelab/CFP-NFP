@@ -1,0 +1,18 @@
+[project]
+name = "cfp-nfp"
+version = "0.1.0"
+description = "Connectome Fingerprint"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "h5py>=3.13.0",
+    "numpy>=2.2.4",
+    "ruff>=0.11.2",
+    "scikit-learn>=1.6.1",
+    "scipy>=1.15.2",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "jupyterlab>=4.3.6",
+]
