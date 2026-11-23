@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: python:3.13-slim
+
+%files
+    . /opt/cfpnfp
+
+%post
+    pip install --no-cache-dir "/opt/cfpnfp[fmri,nfp]"
+    mkdir -p /opt/cfpnfp-cache && CFPNFP_CACHE=/opt/cfpnfp-cache python -c "from cfpnfp import data; [data.path(k) for k in data.FILES if k != 'Example/TS.mat']"
+    chmod -R a+rX /opt/cfpnfp-cache
+
+%environment
+    export CFPNFP_CACHE=/opt/cfpnfp-cache
+
+%runscript
+    exec cfpnfp "$@"
